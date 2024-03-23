@@ -4,14 +4,17 @@ import matplotlib.colors as mcolors
 
 
 # Colormaps
+def SET_PALETTE():
+    sns.set_palette(sns.cubehelix_palette(start=-1.3, rot=-.0))
+
+
 def DIS_CMAP(bins=30, r=False):
     if r:
         return list(reversed([CON_CMAP(i) for i in np.linspace(0, 1, bins)]))
     return [CON_CMAP(i) for i in np.linspace(0, 1, bins)]
 
 
-CON_CMAP = sns.cubehelix_palette(start=-1.5, rot=.5, as_cmap=True)
-
+CON_CMAP = sns.cubehelix_palette(start=-1.3, rot=-.0, as_cmap=True)
 DIV_CMAP = mcolors.LinearSegmentedColormap.from_list(
     "mirrored_cmap",
     colors=np.concatenate((CON_CMAP(np.linspace(0, 1, 128)),

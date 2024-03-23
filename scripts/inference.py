@@ -49,7 +49,7 @@ class ModelInference:
                                    columns=[f'genrePC{i+1}' for i in range(5)])
 
         x = sample[NON_GENRE_COLS]
-        X_new = self.preps['feature_selector'].transform(x)
+        x = self.preps['feature_selector'].transform(x)
         cols = self.preps['feature_selector'].get_support(indices=True)
         selected_features_df = x.iloc[:, cols]
 
