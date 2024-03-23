@@ -31,4 +31,4 @@ The modeling phase involves defining a target based on the profit column to indi
 - [TMDB 5000 Movie Dataset | Kaggle](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
 
 ## GitHub
-- [TMDB Exploratory and Predictive Analysis](https://github.com/mohsenamjadi/TMDB-Analysis)
+- [TMDB Exploratory and Predictive Analysis](https://github.com/MohsenAmiri79/TMDB-Analysis-and-Recommendation-System)
